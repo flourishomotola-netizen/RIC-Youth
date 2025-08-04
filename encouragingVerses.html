@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIC Youth Encouraging Verses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #673AB7, #2196F3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black gradient-text">Encouraging Bible Verses</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Here are some encouraging verses you can share with youth members who may be going through a difficult time. Click the 'Copy' button to grab a verse.</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse1" class="text-gray-700 italic">"The righteous cry out, and the LORD hears them; he delivers them from all their troubles. The LORD is close to the brokenhearted and saves those who are crushed in spirit." <span class="font-semibold not-italic">- Psalm 34:17-18</span></p>
+                <button onclick="copyContent('verse1', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+            
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse2" class="text-gray-700 italic">"So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand." <span class="font-semibold not-italic">- Isaiah 41:10</span></p>
+                <button onclick="copyContent('verse2', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+            
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse3" class="text-gray-700 italic">"Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me." <span class="font-semibold not-italic">- Psalm 23:4</span></p>
+                <button onclick="copyContent('verse3', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+            
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse4" class="text-gray-700 italic">"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." <span class="font-semibold not-italic">- Philippians 4:6-7</span></p>
+                <button onclick="copyContent('verse4', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse5" class="text-gray-700 italic">"Praise be to the God and Father of our Lord Jesus Christ, the Father of compassion and the God of all comfort, who comforts us in all our troubles, so that we can comfort those in any trouble with the comfort we ourselves receive from God." <span class="font-semibold not-italic">- 2 Corinthians 1:3-4</span></p>
+                <button onclick="copyContent('verse5', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse6" class="text-gray-700 italic">"And we know that in all things God works for the good of those who love him, who have been called according to his purpose." <span class="font-semibold not-italic">- Romans 8:28</span></p>
+                <button onclick="copyContent('verse6', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse7" class="text-gray-700 italic">"Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls. For my yoke is easy and my burden is light." <span class="font-semibold not-italic">- Matthew 11:28-30</span></p>
+                <button onclick="copyContent('verse7', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse8" class="text-gray-700 italic">"I lift up my eyes to the mountains—where does my help come from? My help comes from the LORD, the Maker of heaven and earth." <span class="font-semibold not-italic">- Psalm 121:1-2</span></p>
+                <button onclick="copyContent('verse8', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse9" class="text-gray-700 italic">"God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea, though its waters roar and foam and the mountains quake with their surging." <span class="font-semibold not-italic">- Psalm 46:1-3</span></p>
+                <button onclick="copyContent('verse9', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse10" class="text-gray-700 italic">"I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world." <span class="font-semibold not-italic">- John 16:33</span></p>
+                <button onclick="copyContent('verse10', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+            
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse11" class="text-gray-700 italic">"Cast all your anxiety on him because he cares for you." <span class="font-semibold not-italic">- 1 Peter 5:7</span></p>
+                <button onclick="copyContent('verse11', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse12" class="text-gray-700 italic">"Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go." <span class="font-semibold not-italic">- Joshua 1:9</span></p>
+                <button onclick="copyContent('verse12', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse13" class="text-gray-700 italic">"Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight." <span class="font-semibold not-italic">- Proverbs 3:5-6</span></p>
+                <button onclick="copyContent('verse13', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse14" class="text-gray-700 italic">"The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?" <span class="font-semibold not-italic">- Psalm 27:1</span></p>
+                <button onclick="copyContent('verse14', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse15" class="text-gray-700 italic">"May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit." <span class="font-semibold not-italic">- Romans 15:13</span></p>
+                <button onclick="copyContent('verse15', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse16" class="text-gray-700 italic">"For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future." <span class="font-semibold not-italic">- Jeremiah 29:11</span></p>
+                <button onclick="copyContent('verse16', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse17" class="text-gray-700 italic">"He heals the brokenhearted and binds up their wounds." <span class="font-semibold not-italic">- Psalm 147:3</span></p>
+                <button onclick="copyContent('verse17', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse18" class="text-gray-700 italic">"Keep your lives free from the love of money and be content with what you have, because God has said, 'Never will I leave you; never will I forsake you.'" <span class="font-semibold not-italic">- Hebrews 13:5</span></p>
+                <button onclick="copyContent('verse18', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse19" class="text-gray-700 italic">"For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline." <span class="font-semibold not-italic">- 2 Timothy 1:7</span></p>
+                <button onclick="copyContent('verse19', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse20" class="text-gray-700 italic">"Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance. Let perseverance finish its work so that you may be mature and complete, not lacking anything." <span class="font-semibold not-italic">- James 1:2-4</span></p>
+                <button onclick="copyContent('verse20', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse21" class="text-gray-700 italic">"Take delight in the LORD, and he will give you the desires of your heart." <span class="font-semibold not-italic">- Psalm 37:4</span></p>
+                <button onclick="copyContent('verse21', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse22" class="text-gray-700 italic">"Therefore encourage one another and build each other up, just as in fact you are doing." <span class="font-semibold not-italic">- 1 Thessalonians 5:11</span></p>
+                <button onclick="copyContent('verse22', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse23" class="text-gray-700 italic">"But those who hope in the LORD will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint." <span class="font-semibold not-italic">- Isaiah 40:31</span></p>
+                <button onclick="copyContent('verse23', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-amber-50 p-6 rounded-xl shadow-md border border-amber-200 flex flex-col justify-between">
+                <p id="verse24" class="text-gray-700 italic">"For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord." <span class="font-semibold not-italic">- Romans 8:38-39</span></p>
+                <button onclick="copyContent('verse24', this)" class="mt-4 self-end bg-[#FFC107] hover:bg-[#e6ae06] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-xl shadow-md border border-orange-200 flex flex-col justify-between">
+                <p id="verse25" class="text-gray-700 italic">"I keep my eyes always on the LORD. With him at my right hand, I will not be shaken." <span class="font-semibold not-italic">- Psalm 16:8</span></p>
+                <button onclick="copyContent('verse25', this)" class="mt-4 self-end bg-[#FF5722] hover:bg-[#e64e1c] text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200">Copy</button>
+            </div>
+
+        </main>
+        
+        <footer class="text-center mt-16 pt-8 border-t border-gray-200">
+            <p class="text-gray-600">RIC Youth Messaging System</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function copyContent(elementId, button) {
+            const element = document.getElementById(elementId);
+            const textToCopy = element.innerText || element.textContent;
+            
+            const textarea = document.createElement('textarea');
+            textarea.value = textToCopy;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    const originalText = button.innerText;
+                    button.innerText = 'Copied!';
+                    setTimeout(() => {
+                        button.innerText = originalText;
+                    }, 2000);
+                }
+            } catch (err) {
+                console.error('Failed to copy text', err);
+            }
+            
+            document.body.removeChild(textarea);
+        }
+    </script>
+
+</body>
+</html>
